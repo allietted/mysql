@@ -1,0 +1,45 @@
+CREATE TABLE users (
+    ID INT Primary Key auto_increment not null,
+    Store_ID CHAR(10),
+    first_name VARCHAR(50), 
+    last_name VARCHAR(50),
+    gender VARCHAR(20),
+    email VARCHAR(50),
+    birthday_day CHAR(10),
+    phone VARCHAR(20)
+
+);
+INSERT INTO users (ID, Store_ID, first_name, last_name, gender, email, birthday_day, phone)
+
+INSERT INTO users values ("1", "bcc09", "Alliette", "Dortelus", "f", "allietted@gmail.com","1985/17/04", "413-213-4567");
+
+INSERT INTO users values ("2", "bcc29", "Mark", "Wallace", "m", "yourownemail@yahoo.com", "1984/10/10", "954-777-777");
+
+INSERT INTO users values ("3", "bcc34", "Anthony", "Mason", "m", "youremail@msn.com", "1994/11/11", "777-777-777");
+
+INSERT INTO users values (null, "bcc34", "Anthony", "Mason", "m", "youremail@msn.com", "1994/11/11", "777-777-777");
+
+//SELECT * FROM users;
+
+//SELECT COUNT (*) FROM users;
+
+//SELECT COUNT (email) FROM users;
+
+//SELECT DISTINCT email from users;
+//SELECT DISTINCT count(email) FROM users;
+
+//SELECT first_name, last_name, email FROM users;
+
+//SELECT * FROM users WHERE gender ="m";
+//SELECT * FROM users WHERE id <=3;
+//to update- UPDATE users SET first_name = "Alliette" WHERE Store_ID = "bcc09";
+//to update multiple ID- UPDATE users SET first_name = "John" WHERE id = "2";
+to amend an error \c and place the correct item
+
+//to delete- DELETE users WHERE Store_ID = "bcc29";
+
+INSERT INTO users values (null, "bcc42", "Thony", "Lason", "f", "youremail@yahoo.com", "1994/11/11", "777-954-777");
+
+//SELECT * FROM users ORDER BY birthday_day;
+
+//DROP TABLE USERS; DELETES THE TABLE
